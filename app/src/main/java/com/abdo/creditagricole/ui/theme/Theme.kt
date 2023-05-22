@@ -81,7 +81,7 @@ private val DarkColorScheme = darkColorScheme(
 )
 
 @Composable
-fun CreditagricoleTheme(
+fun CreditAgricoleTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
