@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">creditagricole</string>
+    <string name="my_accounts">Mes Comptes</string>
+    <string name="my_account_operations">Mes Operations</string>
+    <string name="rib">Rib</string>
+    <string name="transfer">virement</string>
+    <string name="main">main</string>
 </resources>
