@@ -6,4 +6,6 @@
     <string name="transfer">virement</string>
     <string name="main">main</string>
     <string name="network_connection_problem">Make sure you are connected to the internet</string>
+    <string name="credit_agricole">Credit Agricole</string>
+    <string name="other_banks">Autres Banques</string>
 </resources>
