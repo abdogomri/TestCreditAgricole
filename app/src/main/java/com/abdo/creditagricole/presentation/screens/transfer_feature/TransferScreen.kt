@@ -1,4 +1,4 @@
-package com.abdo.creditagricole.presentation.transfer_feature
+package com.abdo.creditagricole.presentation.screens.transfer_feature
 
 import androidx.compose.runtime.Composable
 

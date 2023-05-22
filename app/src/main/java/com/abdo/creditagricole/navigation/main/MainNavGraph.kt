@@ -18,9 +18,9 @@ import androidx.navigation.compose.composable
 import com.abdo.creditagricole.navigation.Screen
 import com.abdo.creditagricole.navigation.account.accountNavGraph
 import com.abdo.creditagricole.navigation.root.Graph
-import com.abdo.creditagricole.presentation.main_feature.MainScreen
-import com.abdo.creditagricole.presentation.rib_feature.RibScreen
-import com.abdo.creditagricole.presentation.transfer_feature.TransferScreen
+import com.abdo.creditagricole.presentation.screens.main_feature.MainScreen
+import com.abdo.creditagricole.presentation.screens.rib_feature.RibScreen
+import com.abdo.creditagricole.presentation.screens.transfer_feature.TransferScreen
 
 @Composable
 fun MainNavGraph(

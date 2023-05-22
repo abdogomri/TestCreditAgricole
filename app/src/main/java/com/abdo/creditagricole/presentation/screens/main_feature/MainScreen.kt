@@ -1,4 +1,4 @@
-package com.abdo.creditagricole.presentation.main_feature
+package com.abdo.creditagricole.presentation.screens.main_feature
 
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar

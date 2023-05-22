@@ -5,7 +5,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.abdo.creditagricole.presentation.main_feature.MainScreen
+import com.abdo.creditagricole.presentation.screens.main_feature.MainScreen
 
 @Composable
 fun RootNavGraph(
