@@ -11,6 +11,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navigation
 import com.abdo.creditagricole.navigation.Screen
 import com.abdo.creditagricole.navigation.root.Graph
+import com.abdo.creditagricole.presentation.screens.account_feature.SharedViewModel
+import com.abdo.creditagricole.presentation.screens.account_feature.accounts.AccountsScreen
 
 fun NavGraphBuilder.accountNavGraph(navHostController: NavHostController) {
     navigation(
@@ -25,7 +27,18 @@ fun NavGraphBuilder.accountNavGraph(navHostController: NavHostController) {
 fun NavGraphBuilder.accountsRoute(
     navHostController: NavHostController
 ) {
-    composable(route = Screen.Accounts.route) {
+    composable(route = Screen.Accounts.route) { entry ->
+        val viewModel = entry.sharedViewModel<SharedViewModel>(navController = navHostController)
+        val accountsScreenUiState = viewModel.accountsRequestState
+        AccountsScreen(
+            accountsScreenUiState = accountsScreenUiState,
+            navigateToOperations = {
+                viewModel.updateOperationsUiData(
+                    operationsUiData = it
+                )
+                navHostController.navigate(Screen.Operations.route)
+            }
+        )
     }
 }
 

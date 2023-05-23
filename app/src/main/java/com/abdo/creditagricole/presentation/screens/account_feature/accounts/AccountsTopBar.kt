@@ -8,6 +8,7 @@ import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -20,9 +21,11 @@ import com.abdo.creditagricole.R
 
 @Composable
 fun AccountsTopBar(
+    scrollBehavior: TopAppBarScrollBehavior,
     @StringRes titleRes: Int
 ) {
     CenterAlignedTopAppBar(
+        scrollBehavior = scrollBehavior,
         title = {
             Text(
                 modifier = Modifier.fillMaxWidth(),
@@ -40,5 +43,5 @@ fun AccountsTopBar(
 @Preview
 @Composable
 fun AccountsTopBarPreview() {
-    AccountsTopBar(titleRes = R.string.my_accounts)
+    AccountsTopBar(titleRes = R.string.my_accounts, scrollBehavior = TopAppBarDefaults.exitUntilCollapsedScrollBehavior())
 }
