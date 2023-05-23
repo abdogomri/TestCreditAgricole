@@ -11,4 +11,6 @@
     <string name="empty_list">Empty list</string>
     <string name="try_later">Try later</string>
     <string name="error">Error</string>
+    <string name="back_arrow_icon">Back Arrow Icon</string>
+
 </resources>
