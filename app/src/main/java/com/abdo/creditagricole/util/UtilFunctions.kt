@@ -17,3 +17,7 @@ fun loadJSONFromAssets(fileName: String): String {
         reader.readText()
     }
 }
+
+fun limitDecimalDigits(number: Double, numberDecimalDigits: Int): Double {
+    return "%.${numberDecimalDigits}f".format(number).toDouble()
+}
