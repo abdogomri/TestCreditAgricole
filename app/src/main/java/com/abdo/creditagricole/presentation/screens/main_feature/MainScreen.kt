@@ -44,7 +44,7 @@ fun BottomBar(
 
     val entryScreens = listOf(
         Screen.Accounts,
-        Screen.Rib,
+        Screen.Contact,
         Screen.Transfer
     )
     NavigationBar {

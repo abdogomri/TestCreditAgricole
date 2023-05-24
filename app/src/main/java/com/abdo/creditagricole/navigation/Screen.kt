@@ -23,10 +23,10 @@ sealed class Screen(
         iconResId = R.drawable.ic_balance
     )
 
-    object Rib : Screen(
-        route = "rib",
-        titleResourceId = R.string.rib,
-        iconResId = R.drawable.ic_account
+    object Contact : Screen(
+        route = "contact",
+        titleResourceId = R.string.contact,
+        iconResId = R.drawable.ic_contact
     )
 
     object Transfer : Screen(

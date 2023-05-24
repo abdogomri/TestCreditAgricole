@@ -19,7 +19,7 @@ import com.abdo.creditagricole.navigation.Screen
 import com.abdo.creditagricole.navigation.account.accountNavGraph
 import com.abdo.creditagricole.navigation.root.Graph
 import com.abdo.creditagricole.presentation.screens.main_feature.MainScreen
-import com.abdo.creditagricole.presentation.screens.rib_feature.RibScreen
+import com.abdo.creditagricole.presentation.screens.contact_feature.ContactScreen
 import com.abdo.creditagricole.presentation.screens.transfer_feature.TransferScreen
 
 @Composable
@@ -42,16 +42,16 @@ fun MainNavGraph(
             )
     ) {
         mainRoute()
-        ribRoute()
+        contactRoute()
         transferRout()
         accountNavGraph(navHostController = navHostController)
     }
 
 }
 
-fun NavGraphBuilder.ribRoute() {
-    composable(route = Screen.Rib.route) {
-        RibScreen()
+fun NavGraphBuilder.contactRoute() {
+    composable(route = Screen.Contact.route) {
+        ContactScreen()
     }
 }
 
