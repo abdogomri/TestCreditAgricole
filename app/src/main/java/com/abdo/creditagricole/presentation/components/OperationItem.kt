@@ -68,7 +68,7 @@ fun OperationItem(
                 )
                 Text(
                     text = "${operation.amount} ${operation.currency}",
-                    style = TextStyle(fontSize = MaterialTheme.typography.bodyMedium.fontSize)
+                    style = getAmountTextStyle(operation.amount)
                 )
             }
         }

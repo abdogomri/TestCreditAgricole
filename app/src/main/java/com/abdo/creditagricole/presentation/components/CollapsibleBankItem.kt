@@ -125,7 +125,7 @@ fun CollapsibleBankItemHeader(
             Text(
                 textAlign = TextAlign.End,
                 text = "$balance $currency",
-                style = TextStyle(fontSize = MaterialTheme.typography.bodyMedium.fontSize)
+                style = getBalanceTextStyle(balance = balance)
             )
             IconButton(
                 modifier = Modifier.rotate(degrees = angle),

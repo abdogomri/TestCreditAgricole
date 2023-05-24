@@ -23,6 +23,7 @@ import androidx.compose.ui.unit.dp
 import com.abdo.creditagricole.presentation.components.DateHeader
 import com.abdo.creditagricole.presentation.components.EmptyPage
 import com.abdo.creditagricole.presentation.components.OperationItem
+import com.abdo.creditagricole.presentation.components.getBalanceTextStyle
 import com.abdo.creditagricole.presentation.models.OperationUiData
 
 @Composable
@@ -41,9 +42,8 @@ fun OperationsContent(
         Spacer(modifier = Modifier.height(14.dp))
         Text(
             text = "${operationUiData.balance} ${operationUiData.currency}",
-            style = TextStyle(
+            style = getBalanceTextStyle(balance = operationUiData.balance).copy(
                 fontSize = MaterialTheme.typography.titleLarge.fontSize,
-                fontWeight = FontWeight.Light
             )
         )
         Text(

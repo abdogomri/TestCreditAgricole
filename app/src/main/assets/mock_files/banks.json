@@ -2,7 +2,7 @@
     {
         "accounts": [
             {
-                "balance": 2031.84,
+                "balance": -2031.84,
                 "contract_number": "32216549871",
                 "holder": "Corinne Martin",
                 "id": "151515151151",
@@ -16,11 +16,11 @@
                         "title": "Prélèvement Netflix"
                     },
                     {
-                        "amount": "-95,99",
+                        "amount": "+95,99",
                         "category": "online",
                         "date": "1644611558",
                         "id": "4",
-                        "title": "CB Amazon"
+                        "title": "Cashback"
                     }
                 ],
                 "order": 1,

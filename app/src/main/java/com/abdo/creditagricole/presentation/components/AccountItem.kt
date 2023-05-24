@@ -37,7 +37,7 @@ fun AccountItem(
             )
             Text(
                 text = "${accountUiData.balance} ${accountUiData.currency}",
-                style = TextStyle(fontSize = MaterialTheme.typography.bodyMedium.fontSize)
+                style = getBalanceTextStyle(balance = accountUiData.balance)
             )
         }
     }
