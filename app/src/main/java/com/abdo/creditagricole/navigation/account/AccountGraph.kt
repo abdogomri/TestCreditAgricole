@@ -13,6 +13,7 @@ import com.abdo.creditagricole.navigation.Screen
 import com.abdo.creditagricole.navigation.root.Graph
 import com.abdo.creditagricole.presentation.screens.account_feature.SharedViewModel
 import com.abdo.creditagricole.presentation.screens.account_feature.accounts.AccountsScreen
+import com.abdo.creditagricole.presentation.screens.account_feature.operations.OperationsScreen
 
 fun NavGraphBuilder.accountNavGraph(navHostController: NavHostController) {
     navigation(
@@ -45,7 +46,13 @@ fun NavGraphBuilder.accountsRoute(
 fun NavGraphBuilder.operationsRoute(
     navHostController: NavHostController,
 ) {
-    composable(route = Screen.Operations.route) {
+    composable(route = Screen.Operations.route) { entry ->
+        val viewModel = entry.sharedViewModel<SharedViewModel>(navController = navHostController)
+        val operationsScreenUiState = viewModel.operationsScreenUiState
+        OperationsScreen(
+            operationsScreenUiState = operationsScreenUiState,
+            onBackPressed = { navHostController.popBackStack() }
+        )
     }
 }
 

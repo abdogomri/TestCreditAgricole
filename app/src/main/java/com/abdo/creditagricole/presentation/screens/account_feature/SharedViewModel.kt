@@ -1,5 +1,6 @@
 package com.abdo.creditagricole.presentation.screens.account_feature
 
+import android.util.Log
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -55,6 +56,11 @@ class SharedViewModel @Inject constructor(
                 else -> {}
             }
         }
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        Log.d("sharedViewModel", "ViewModel cleared")
     }
 
 }
