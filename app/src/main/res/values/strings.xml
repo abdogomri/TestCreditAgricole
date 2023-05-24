@@ -12,5 +12,12 @@
     <string name="try_later">Try later</string>
     <string name="error">Error</string>
     <string name="back_arrow_icon">Back Arrow Icon</string>
+    <string name="operation_icon">Operation Icon</string>
+    <string name="leisure">Leisure</string>
+    <string name="food">Food</string>
+    <string name="trip">Trip</string>
+    <string name="costs">Costs</string>
+    <string name="online">Online</string>
+    <string name="housing">Housing</string>
 
 </resources>

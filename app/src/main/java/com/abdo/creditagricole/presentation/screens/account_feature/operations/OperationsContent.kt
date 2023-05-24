@@ -47,10 +47,16 @@ fun OperationsContent(
             )
         )
         Text(
-            text = operationUiData.holderName,
+            text = operationUiData.accountLabel,
             style = TextStyle(
                 fontSize = MaterialTheme.typography.titleLarge.fontSize,
                 fontWeight = FontWeight.Light
+            )
+        )
+        Text(
+            text = operationUiData.holderName,
+            style = TextStyle(
+                fontSize = MaterialTheme.typography.titleMedium.fontSize,
             )
         )
         if (operationUiData.operations.isNotEmpty()) {
@@ -80,7 +86,8 @@ fun OperationsContentPreview() {
         operationUiData = OperationUiData(
             balance = 2067.9,
             holderName = "Corinne Martin",
-            operations = mapOf()
+            accountLabel = "Compte Mozaïc",
+            operations = mapOf(),
         ),
     )
 }

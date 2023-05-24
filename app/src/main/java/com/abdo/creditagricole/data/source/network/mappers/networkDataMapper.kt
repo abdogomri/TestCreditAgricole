@@ -7,6 +7,7 @@ import com.abdo.creditagricole.presentation.models.AccountType
 import com.abdo.creditagricole.presentation.models.AccountUiData
 import com.abdo.creditagricole.presentation.models.BanksUiData
 import com.abdo.creditagricole.presentation.models.Operation
+import com.abdo.creditagricole.presentation.models.OperationCategory
 import com.abdo.creditagricole.presentation.models.OperationUiData
 import com.abdo.creditagricole.util.limitDecimalDigits
 import java.time.Instant
@@ -56,10 +57,12 @@ fun List<AccountsRS>.toAccountUiData(): List<AccountUiData> {
             AccountUiData(
                 accountId = accountsRs.id,
                 holderName = accountsRs.holder,
+                accountLabel = accountsRs.label,
                 balance = accountsRs.balance,
                 operations = accountsRs.operations.toOperationUiData(
                     balance = accountsRs.balance,
-                    holderName = accountsRs.holder
+                    holderName = accountsRs.holder,
+                    accountLabel = accountsRs.label
                 )
             )
         )
@@ -71,7 +74,11 @@ fun List<AccountsRS>.toAccountUiData(): List<AccountUiData> {
 
 }
 
-fun List<OperationsRS>.toOperationUiData(balance: Double, holderName: String): OperationUiData {
+fun List<OperationsRS>.toOperationUiData(
+    balance: Double,
+    holderName: String,
+    accountLabel: String
+): OperationUiData {
     val groupedOperations = this.sortedBy {
         it.date
     }.groupBy { operationsRs ->
@@ -86,16 +93,17 @@ fun List<OperationsRS>.toOperationUiData(balance: Double, holderName: String): O
     return OperationUiData(
         balance = balance,
         holderName = holderName,
-        operations = operations
+        accountLabel = accountLabel,
+        operations = operations,
     )
 
 }
 
 fun OperationsRS.toOperation(): Operation {
     return Operation(
-        operationId = this.id,
         operationTitle = this.title,
         amount = this.amount,
+        operationType = OperationCategory.valueOf(this.category.uppercase())
     )
 }
 

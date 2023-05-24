@@ -10,6 +10,7 @@ data class OperationsScreenUiState(
         balance = 0.0,
         currency = "",
         holderName = "",
-        operations = mapOf()
+        accountLabel = "",
+        operations = mapOf(),
     )
 )

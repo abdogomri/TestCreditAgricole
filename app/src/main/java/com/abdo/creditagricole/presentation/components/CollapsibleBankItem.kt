@@ -149,12 +149,14 @@ fun BankSectionItemPreview() {
     val fakeData = AccountUiData(
         accountId = "0",
         holderName = "Corinne Martin",
+        accountLabel = "Compte Mozaïc",
         balance = 2022331.84,
         operations = OperationUiData(
             balance = 2022331.84,
             currency = "",
             holderName = "",
-            operations = mapOf()
+            accountLabel = "",
+            operations = mapOf(),
         )
     )
     CollapsibleBankItem(
