@@ -60,7 +60,7 @@ fun OperationsContent(
             )
         )
         if (operationUiData.operations.isNotEmpty()) {
-            LazyColumn() {
+            LazyColumn {
                 operationsMap.forEach { (localDate, operations) ->
                     stickyHeader(key = localDate) {
                         DateHeader(localDate = localDate)

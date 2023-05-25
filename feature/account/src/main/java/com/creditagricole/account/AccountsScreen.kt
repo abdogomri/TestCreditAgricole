@@ -46,7 +46,7 @@ fun AccountsScreen(
                 is RequestState.Error -> {
                     EmptyPage(
                         title = stringResource(R.string.error),
-                        subtitle = "${accountsScreenUiState.error.message}"
+                        subtitle = stringResource(id = R.string.network_connection_problem)
                     )
                 }
 

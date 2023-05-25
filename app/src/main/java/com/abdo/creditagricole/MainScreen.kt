@@ -14,9 +14,9 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.creditagricole.util.Screen
 import com.abdo.creditagricole.navigation.main.MainNavGraph
 import com.creditagricole.util.Graph
+import com.creditagricole.util.Screen
 
 @Composable
 fun MainScreen(
@@ -61,7 +61,10 @@ fun BottomBar(
                     selectedScreenIndex = index
                 },
                 icon = {
-                    Icon(painter = painterResource(id = screen.iconResId), contentDescription = "")
+                    Icon(
+                        painter = painterResource(id = screen.iconResId),
+                        contentDescription = stringResource(R.string.icon)
+                    )
                 },
                 label = {
                     Text(text = stringResource(id = screen.titleResourceId))

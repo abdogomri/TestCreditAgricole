@@ -1,23 +1,5 @@
 <resources>
-    <string name="app_name">creditagricole</string>
-    <string name="my_accounts">Mes Comptes</string>
-    <string name="my_account_operations">Mes Operations</string>
-    <string name="contact">Contact</string>
-    <string name="transfer">Virement</string>
-    <string name="main">main</string>
-    <string name="network_connection_problem">Make sure you are connected to the internet</string>
-    <string name="credit_agricole">Credit Agricole</string>
-    <string name="other_banks">Autres Banques</string>
-    <string name="empty_list">Empty list</string>
-    <string name="try_later">Try later</string>
     <string name="error">Error</string>
-    <string name="back_arrow_icon">Back Arrow Icon</string>
-    <string name="operation_icon">Operation Icon</string>
-    <string name="leisure">Leisure</string>
-    <string name="food">Food</string>
-    <string name="trip">Trip</string>
-    <string name="costs">Costs</string>
-    <string name="online">Online</string>
-    <string name="housing">Housing</string>
-
+    <string name="my_accounts">Mes Comptes</string>
+    <string name="network_connection_problem">Make sure you are connected to the internet</string>
 </resources>
