@@ -1,4 +1,4 @@
-package com.abdo.creditagricole.util
+package com.creditagricole.util.model
 
 sealed class RequestState<out T> {
     object Idle: RequestState<Nothing>()

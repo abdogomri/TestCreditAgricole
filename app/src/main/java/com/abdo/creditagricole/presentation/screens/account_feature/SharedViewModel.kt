@@ -12,7 +12,7 @@ import com.creditagricole.ui.models.AccountType
 import com.creditagricole.ui.models.BanksUiData
 import com.creditagricole.ui.models.OperationUiData
 import com.abdo.creditagricole.presentation.screens.account_feature.operations.OperationsScreenUiState
-import com.abdo.creditagricole.util.RequestState
+import com.creditagricole.util.model.RequestState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

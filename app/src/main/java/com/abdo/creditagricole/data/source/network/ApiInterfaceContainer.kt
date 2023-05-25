@@ -3,7 +3,7 @@ package com.abdo.creditagricole.data.source.network
 import android.content.Context
 import com.abdo.creditagricole.BuildConfig
 import com.abdo.creditagricole.data.source.mock.MockApiInterfaceImpl
-import com.abdo.creditagricole.util.Constants.BASE_URL
+import com.creditagricole.util.Constants.BASE_URL
 import com.chuckerteam.chucker.api.ChuckerCollector
 import com.chuckerteam.chucker.api.ChuckerInterceptor
 import okhttp3.OkHttpClient

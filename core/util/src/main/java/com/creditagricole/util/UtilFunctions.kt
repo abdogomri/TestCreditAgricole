@@ -1,4 +1,4 @@
-package com.abdo.creditagricole.util
+package com.creditagricole.util
 
 import android.content.Context
 import com.google.gson.Gson

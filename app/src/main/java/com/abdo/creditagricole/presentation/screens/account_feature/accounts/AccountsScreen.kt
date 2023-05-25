@@ -18,7 +18,7 @@ import com.abdo.creditagricole.navigation.Screen
 import com.creditagricole.ui.components.EmptyPage
 import com.creditagricole.ui.models.OperationUiData
 import com.abdo.creditagricole.presentation.screens.account_feature.AccountsRequestState
-import com.abdo.creditagricole.util.RequestState
+import com.creditagricole.util.model.RequestState
 
 @Composable
 fun AccountsScreen(

@@ -9,7 +9,7 @@ import com.creditagricole.ui.models.BanksUiData
 import com.creditagricole.ui.models.Operation
 import com.creditagricole.ui.models.OperationCategory
 import com.creditagricole.ui.models.OperationUiData
-import com.abdo.creditagricole.util.limitDecimalDigits
+import com.creditagricole.util.limitDecimalDigits
 import java.time.Instant
 import java.time.ZoneId
 
