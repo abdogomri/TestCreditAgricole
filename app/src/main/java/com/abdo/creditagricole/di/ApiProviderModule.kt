@@ -1,7 +1,7 @@
 package com.abdo.creditagricole.di
 
 import android.content.Context
-import com.abdo.creditagricole.data.source.network.ApiInterfaceContainer
+import com.creditagricole.network.source.network.ApiInterfaceContainer
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

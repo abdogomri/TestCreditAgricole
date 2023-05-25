@@ -49,12 +49,15 @@ android {
     flavorDimensions "default"
 
     productFlavors {
-        MOCK_CA_ {
-        }
 
         PROD_CA_ {
+            dimension 'default'
+        }
+        MOCK_CA_ {
+            dimension 'default'
         }
     }
+
 }
 
 dependencies {

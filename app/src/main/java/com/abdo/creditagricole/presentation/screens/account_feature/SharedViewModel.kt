@@ -6,7 +6,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.abdo.creditagricole.data.repository.BanksRepository
+import com.creditagricole.network.repository.BanksRepository
 import com.creditagricole.domain.mappers.toBanksUiDataMap
 import com.abdo.creditagricole.presentation.screens.account_feature.operations.OperationsScreenUiState
 import com.creditagricole.model.data.AccountType

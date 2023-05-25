@@ -1,4 +1,4 @@
-package com.abdo.creditagricole.data.source.network
+package com.creditagricole.network.source.network
 
 import com.creditagricole.network.models.RemoteBanksRS
 import com.creditagricole.util.Constants.USER_BANKS_END_POINT

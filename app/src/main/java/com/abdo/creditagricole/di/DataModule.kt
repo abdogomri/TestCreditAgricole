@@ -1,11 +1,11 @@
 package com.abdo.creditagricole.di
 
-import com.abdo.creditagricole.data.repository.BanksRepository
-import com.abdo.creditagricole.data.repository.DefaultBanksRepository
-import com.abdo.creditagricole.data.source.BanksDataSource
-import com.abdo.creditagricole.data.source.network.ApiInterface
-import com.abdo.creditagricole.data.source.network.ApiInterfaceContainer
-import com.abdo.creditagricole.data.source.network.BanksRemoteDataSource
+import com.creditagricole.network.repository.BanksRepository
+import com.creditagricole.network.repository.DefaultBanksRepository
+import com.creditagricole.network.source.BanksDataSource
+import com.creditagricole.network.source.network.ApiInterface
+import com.creditagricole.network.source.network.ApiInterfaceContainer
+import com.creditagricole.network.source.network.BanksRemoteDataSource
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

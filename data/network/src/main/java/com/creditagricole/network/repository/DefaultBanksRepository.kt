@@ -1,6 +1,6 @@
-package com.abdo.creditagricole.data.repository
+package com.creditagricole.network.repository
 
-import com.abdo.creditagricole.data.source.BanksDataSource
+import com.creditagricole.network.source.BanksDataSource
 import com.creditagricole.network.models.RemoteBanksRS
 import com.creditagricole.util.model.RequestState
 import javax.inject.Inject

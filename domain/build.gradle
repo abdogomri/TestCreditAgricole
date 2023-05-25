@@ -28,6 +28,23 @@ android {
     kotlinOptions {
         jvmTarget = '17'
     }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+    flavorDimensions "default"
+
+    productFlavors {
+
+        PROD_CA_ {
+        dimension 'default'
+        }
+        MOCK_CA_ {
+            dimension 'default'
+        }
+    }
+
 }
 
 dependencies {

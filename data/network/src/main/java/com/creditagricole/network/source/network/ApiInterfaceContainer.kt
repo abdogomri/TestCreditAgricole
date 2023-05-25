@@ -1,11 +1,11 @@
-package com.abdo.creditagricole.data.source.network
+package com.creditagricole.network.source.network
 
 import android.content.Context
-import com.abdo.creditagricole.BuildConfig
-import com.abdo.creditagricole.data.source.mock.MockApiInterfaceImpl
-import com.creditagricole.util.Constants.BASE_URL
 import com.chuckerteam.chucker.api.ChuckerCollector
 import com.chuckerteam.chucker.api.ChuckerInterceptor
+import com.creditagricole.network.BuildConfig
+import com.creditagricole.network.source.mock.MockApiInterfaceImpl
+import com.creditagricole.util.Constants.BASE_URL
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

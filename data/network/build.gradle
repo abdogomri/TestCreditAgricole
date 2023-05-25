@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'dagger.hilt.android.plugin'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -28,9 +30,32 @@ android {
     kotlinOptions {
         jvmTarget = '17'
     }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+    flavorDimensions "default"
+
+    productFlavors {
+
+        PROD_CA_ {
+            dimension 'default'
+        }
+        MOCK_CA_ {
+            dimension 'default'
+        }
+    }
+
 }
 
 dependencies {
+
+    // Dagger Hilt
+    implementation libs.hilt.android
+    kapt libs.hilt.compiler
+//    implementation "androidx.hilt:hilt-navigation-compose:1.0.0"
+
     implementation libs.squareup.retrofit
     implementation libs.squareup.okhttp
     implementation libs.squareup.okhttp.urlconnection

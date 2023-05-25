@@ -1,12 +1,8 @@
-package com.abdo.creditagricole.data.repository
+package com.creditagricole.network.source
 
 import com.creditagricole.network.models.RemoteBanksRS
 import com.creditagricole.util.model.RequestState
 
-/**
- * Interface to the data layer.
- */
-interface BanksRepository {
+interface BanksDataSource {
     suspend fun getUserBanks(): RequestState<List<RemoteBanksRS>>
-
 }

@@ -1,7 +1,7 @@
-package com.abdo.creditagricole.data.source.mock
+package com.creditagricole.network.source.mock
 
 import android.content.Context
-import com.abdo.creditagricole.data.source.network.ApiInterface
+import com.creditagricole.network.source.network.ApiInterface
 import com.creditagricole.network.models.RemoteBanksRS
 import com.creditagricole.util.getMock
 
