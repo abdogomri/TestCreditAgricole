@@ -35,9 +35,9 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.creditagricole.ui.models.AccountUiData
-import com.creditagricole.ui.models.BanksUiData
-import com.creditagricole.ui.models.OperationUiData
+import com.creditagricole.model.data.AccountUiData
+import com.creditagricole.model.data.BanksUiData
+import com.creditagricole.model.data.OperationUiData
 import com.creditagricole.ui.theme.Elevation
 
 @Composable

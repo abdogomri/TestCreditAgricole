@@ -1,6 +1,6 @@
 package com.abdo.creditagricole.data.source.network
 
-import com.abdo.creditagricole.data.source.network.models.RemoteBanksRS
+import com.creditagricole.network.models.RemoteBanksRS
 import com.creditagricole.util.Constants.USER_BANKS_END_POINT
 import retrofit2.http.GET
 

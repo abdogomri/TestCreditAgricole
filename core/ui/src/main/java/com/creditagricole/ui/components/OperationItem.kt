@@ -32,8 +32,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.creditagricole.ui.R
-import com.creditagricole.ui.models.Operation
-import com.creditagricole.ui.models.OperationCategory
+import com.creditagricole.model.data.Operation
+import com.creditagricole.model.data.OperationCategory
 import com.creditagricole.ui.theme.Elevation
 
 

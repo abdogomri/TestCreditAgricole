@@ -7,11 +7,11 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.abdo.creditagricole.data.repository.BanksRepository
-import com.abdo.creditagricole.data.source.network.mappers.toBanksUiDataMap
-import com.creditagricole.ui.models.AccountType
-import com.creditagricole.ui.models.BanksUiData
-import com.creditagricole.ui.models.OperationUiData
+import com.creditagricole.domain.mappers.toBanksUiDataMap
 import com.abdo.creditagricole.presentation.screens.account_feature.operations.OperationsScreenUiState
+import com.creditagricole.model.data.AccountType
+import com.creditagricole.model.data.BanksUiData
+import com.creditagricole.model.data.OperationUiData
 import com.creditagricole.util.model.RequestState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers

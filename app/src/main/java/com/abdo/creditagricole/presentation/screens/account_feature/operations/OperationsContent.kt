@@ -24,12 +24,12 @@ import com.creditagricole.ui.components.DateHeader
 import com.creditagricole.ui.components.EmptyPage
 import com.creditagricole.ui.components.OperationItem
 import com.creditagricole.ui.components.getBalanceTextStyle
-import com.creditagricole.ui.models.OperationUiData
+import com.creditagricole.model.data.OperationUiData
 
 @Composable
 fun OperationsContent(
     paddingValues: PaddingValues,
-    operationUiData: OperationUiData
+    operationUiData: com.creditagricole.model.data.OperationUiData
 ) {
     val operationsMap = operationUiData.operations
     Column(
@@ -83,7 +83,7 @@ fun OperationsContent(
 fun OperationsContentPreview() {
     OperationsContent(
         paddingValues = PaddingValues(all = 0.dp),
-        operationUiData = OperationUiData(
+        operationUiData = com.creditagricole.model.data.OperationUiData(
             balance = 2067.9,
             holderName = "Corinne Martin",
             accountLabel = "Compte Mozaïc",

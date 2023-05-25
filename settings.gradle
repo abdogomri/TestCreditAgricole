@@ -16,3 +16,6 @@ rootProject.name = "creditagricole"
 include ':app'
 include ':core:ui'
 include ':core:util'
+include ':data:network'
+include ':domain'
+include ':core:model'
