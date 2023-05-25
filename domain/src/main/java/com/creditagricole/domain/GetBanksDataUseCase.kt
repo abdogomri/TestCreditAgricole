@@ -1,9 +1,7 @@
 package com.creditagricole.domain
 
 import com.creditagricole.domain.mappers.toBanksUiDataMap
-import com.creditagricole.model.data.AccountType
 import com.creditagricole.model.data.AccountsRequestState
-import com.creditagricole.model.data.BanksUiData
 import com.creditagricole.network.repository.BanksRepository
 import com.creditagricole.util.model.RequestState
 import javax.inject.Inject
