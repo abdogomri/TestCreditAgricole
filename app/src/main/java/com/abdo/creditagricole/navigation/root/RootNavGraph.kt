@@ -5,7 +5,8 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.abdo.creditagricole.presentation.screens.main_feature.MainScreen
+import com.abdo.creditagricole.MainScreen
+import com.creditagricole.util.Graph
 
 @Composable
 fun RootNavGraph(
@@ -26,11 +27,4 @@ fun NavGraphBuilder.mainRoute() {
     composable(route = Graph.MAIN_GRAPH) {
         MainScreen()
     }
-}
-
-
-object Graph {
-    const val ROOT_GRAPH = "root_graph"
-    const val MAIN_GRAPH = "main_graph"
-    const val ACCOUNT_GRAPH = "account_graph"
 }

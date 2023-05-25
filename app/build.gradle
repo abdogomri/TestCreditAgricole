@@ -105,5 +105,9 @@ dependencies {
     implementation(project(":data:network"))
     implementation(project(":core:model"))
     implementation(project(":domain"))
+
     implementation(project(":feature:account"))
+    implementation(project(":feature:operations"))
+    implementation(project(":feature:contact"))
+    implementation(project(":feature:transfer"))
 }
