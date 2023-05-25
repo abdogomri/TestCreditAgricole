@@ -11,6 +11,9 @@ espresso = "3.5.1"
 compose-navigation = "2.5.3"
 runtime-compose = "2.6.1"
 kotlin-coroutines-core = "1.6.4"
+kotlin-coroutines-android = "1.6.4"
+google-truth = "1.1.3"
+kotlin-coroutines-test = "1.6.4"
 dagger-hilt = "2.45"
 hilt-navigation-compose = "1.0.0"
 retrofit = "2.9.0"
@@ -34,6 +37,9 @@ compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", ve
 navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "compose-navigation"}
 runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "runtime-compose"}
 coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlin-coroutines-core"}
+coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlin-coroutines-android"}
+coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlin-coroutines-test"}
+google-truth = { module = "com.google.truth:truth", version.ref = "google-truth"}
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "dagger-hilt"}
 hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "dagger-hilt"}
 hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-navigation-compose"}

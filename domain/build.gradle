@@ -50,9 +50,15 @@ android {
 }
 
 dependencies {
-
+    implementation libs.core.ktx
     implementation libs.hilt.android
     kapt libs.hilt.compiler
+
+    testImplementation libs.junit
+    testImplementation libs.junit.ext
+    testImplementation libs.google.truth
+    testImplementation libs.coroutines.android
+    testImplementation libs.coroutines.test
 
     implementation(project(":core:model"))
     implementation(project(":core:util"))

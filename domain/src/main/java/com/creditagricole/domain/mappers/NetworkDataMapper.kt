@@ -74,6 +74,7 @@ fun List<AccountsRS>.toAccountUiData(): List<AccountUiData> {
 
 }
 
+//returns operation grouped by date
 fun List<OperationsRS>.toOperationUiData(
     balance: Double,
     holderName: String,
@@ -96,7 +97,6 @@ fun List<OperationsRS>.toOperationUiData(
         accountLabel = accountLabel,
         operations = operations,
     )
-
 }
 
 fun OperationsRS.toOperation(): Operation {
