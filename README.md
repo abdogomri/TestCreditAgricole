@@ -8,6 +8,8 @@ Cette application bancaire contient deux écran le premier écran est celui qui 
 
 et un écran qui montre les opérations éffectuées dans ce comptes regroupées et triées par dates et par nom d'opération .
 
+La navigation dans l'application est montré dans le schema suivant : 
+
 Dans le cadre de ce projet il y avait plusieurs choix à faire (technologies, architecture , modularisation ...)
 
 ces choix ont étés basés sur plusieurs bases : 
@@ -31,5 +33,20 @@ DI : Hilt
 Navigation : Compose navigation
 Asynchronous dev : Coroutines
 Reactive Programming : Flow
+
+Ce Projet contient deux branches : 
+
+[Main](https://github.com/abdogomri/TestCreditAgricole) : contient l'application avant modularisation 
+
+[Multimodule](https://github.com/abdogomri/TestCreditAgricole/tree/multimodule) : contient l'application modularisé
+
+Modularisation :
+
+![Untitled](https://github.com/abdogomri/TestCreditAgricole/assets/26137154/da686ecf-7a6e-498a-a151-4ae5d3b6eb33)
+
+
+
+
+
 
 
