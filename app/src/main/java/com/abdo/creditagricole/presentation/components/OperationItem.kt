@@ -41,7 +41,7 @@ import com.abdo.creditagricole.ui.theme.Elevation
 fun OperationItem(
     operation: Operation
 ) {
-    val iconBackgroundColor: Color = MaterialTheme.colorScheme.surface
+    val iconBackgroundColor: Color = MaterialTheme.colorScheme.surfaceVariant
     val localDensity = LocalDensity.current
     var componentHeight by remember { mutableStateOf(0.dp) }
     Row(
