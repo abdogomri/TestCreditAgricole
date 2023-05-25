@@ -14,7 +14,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.abdo.creditagricole.navigation.Screen
+import com.creditagricole.util.Screen
 import com.abdo.creditagricole.navigation.main.MainNavGraph
 import com.abdo.creditagricole.navigation.root.Graph
 

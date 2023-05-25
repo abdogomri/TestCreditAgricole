@@ -1,10 +1,7 @@
-package com.abdo.creditagricole.navigation
+package com.creditagricole.util
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import com.abdo.creditagricole.R
-import com.abdo.creditagricole.navigation.account.AccountDestinations.ACCOUNTS_ROUTE
-import com.abdo.creditagricole.navigation.account.AccountDestinations.OPERATIONS_ROUTE
 
 sealed class Screen(
     val route: String,
@@ -12,13 +9,13 @@ sealed class Screen(
     @DrawableRes val iconResId: Int
 ) {
     object Accounts : Screen(
-        route = ACCOUNTS_ROUTE,
+        route = "accounts",
         titleResourceId = R.string.my_accounts,
         iconResId = R.drawable.ic_balance
     )
 
     object Operations : Screen(
-        route = OPERATIONS_ROUTE,
+        route = "operations",
         titleResourceId = R.string.my_account_operations,
         iconResId = R.drawable.ic_balance
     )

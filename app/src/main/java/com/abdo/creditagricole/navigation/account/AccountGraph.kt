@@ -9,7 +9,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
-import com.abdo.creditagricole.navigation.Screen
+import com.creditagricole.util.Screen
 import com.abdo.creditagricole.navigation.root.Graph
 import com.abdo.creditagricole.presentation.screens.account_feature.SharedViewModel
 import com.abdo.creditagricole.presentation.screens.account_feature.accounts.AccountsScreen

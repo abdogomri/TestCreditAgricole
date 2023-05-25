@@ -14,7 +14,6 @@ kotlin-coroutines-core = "1.6.4"
 dagger-hilt = "2.45"
 hilt-navigation-compose = "1.0.0"
 retrofit = "2.9.0"
-gson = "2.9.0"
 okhttp = "5.0.0-alpha.3"
 chucker = "3.5.2"
 
@@ -40,7 +39,7 @@ hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "dag
 hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-navigation-compose"}
 
 squareup-retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit"}
-squareup-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "gson"}
+squareup-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit"}
 squareup-okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp"}
 squareup-okhttp-urlconnection = { module = "com.squareup.okhttp3:okhttp-urlconnection", version.ref = "okhttp"}
 squareup-okhttp-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttp"}

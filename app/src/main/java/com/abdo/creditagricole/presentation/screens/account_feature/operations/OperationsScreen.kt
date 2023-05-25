@@ -8,7 +8,7 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
-import com.abdo.creditagricole.navigation.Screen
+import com.creditagricole.util.Screen
 
 @Composable
 fun OperationsScreen(

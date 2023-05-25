@@ -15,7 +15,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.abdo.creditagricole.navigation.Screen
+import com.creditagricole.util.Screen
 import com.abdo.creditagricole.navigation.account.accountNavGraph
 import com.abdo.creditagricole.navigation.root.Graph
 import com.abdo.creditagricole.presentation.screens.main_feature.MainScreen
