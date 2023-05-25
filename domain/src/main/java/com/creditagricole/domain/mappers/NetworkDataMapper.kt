@@ -67,11 +67,9 @@ fun List<AccountsRS>.toAccountUiData(): List<AccountUiData> {
             )
         )
     }
-
     return result.sortedBy { accountUiData ->
         accountUiData.holderName
     }
-
 }
 
 //returns operation grouped by date

@@ -1,9 +1,14 @@
 package com.creditagricole.domain.mappers
 
+import com.creditagricole.model.data.AccountUiData
+import com.creditagricole.model.data.Operation
 import com.creditagricole.model.data.OperationCategory
+import com.creditagricole.model.data.OperationUiData
+import com.creditagricole.network.models.AccountsRS
 import com.creditagricole.network.models.OperationsRS
 import com.google.common.truth.Truth.assertThat
 import org.junit.Test
+import java.time.LocalDate
 
 class NetworkDataMapperTest {
     private val operationRS1 = OperationsRS(
@@ -29,6 +34,31 @@ class NetworkDataMapperTest {
         id = "op002",
         title = "Food Transaction"
     )
+
+    private val accountStartingWithZ = AccountsRS(
+        balance = 1000.0,
+        contractNumber = "123456789",
+        holder = "Z",
+        id = "acc001",
+        label = "Savings Account",
+        operations = emptyList(),
+        order = 1,
+        productCode = "SAV",
+        role = 1
+    )
+
+    private val accountStartingWithA = AccountsRS(
+        balance = 5000.0,
+        contractNumber = "987654321",
+        holder = "A",
+        id = "acc002",
+        label = "Checking Account",
+        operations = emptyList(),
+        order = 2,
+        productCode = "CHK",
+        role = 2
+    )
+
 
     // Arrange
     private val operationsRSList = mutableListOf(operationRS1, operationRS2)
@@ -81,6 +111,41 @@ class NetworkDataMapperTest {
         assertThat(operationUiData.operations.size).isEqualTo(2)
         assertThat(operationUiData.operations[operationUiData.operations.keys.last()]).isEqualTo(
             listOf(operationRS3.toOperation())
+        )
+    }
+
+
+    @Test
+    fun testToAccountUiData() {
+        // Arrange add accounts not in order ( Z first then A)
+        val accountsList = listOf(accountStartingWithZ, accountStartingWithA)
+
+        // Act
+        val accountUiDataList = accountsList.toAccountUiData()
+
+        // Assert make sure the result is arranged alphabetically
+        assertThat(accountUiDataList.size).isEqualTo(2)
+        assertThat(accountUiDataList[0].holderName).isEqualTo(accountStartingWithA.holder)
+
+        val expectedAccount1 = AccountUiData(
+            accountId = "acc001",
+            holderName = "John Doe",
+            accountLabel = "Savings Account",
+            balance = 1000.0,
+            operations = OperationUiData(
+                balance = 1000.0,
+                holderName = "John Doe",
+                accountLabel = "Savings Account",
+                operations = mapOf(
+                    LocalDate.now() to listOf(
+                        Operation(
+                            operationType = OperationCategory.LEISURE,
+                            operationTitle = "Leisure Transaction",
+                            amount = "100.00"
+                        )
+                    )
+                )
+            )
         )
     }
 }
