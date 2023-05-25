@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config>
+        <domain includeSubdomains="true">cdf-test-mobile-default-rtdb.europe-west1.firebasedatabase.app</domain>
+        <pin-set expiration="2023-06-22">
+            <pin digest="SHA-256">Z/IIvxeFDxOLyT2xmtOVp0TzXt31nWcNc/cB/vRuzZM=</pin>
+        </pin-set>
+    </domain-config>
+</network-security-config>
