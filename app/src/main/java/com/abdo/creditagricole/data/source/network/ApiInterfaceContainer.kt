@@ -25,7 +25,7 @@ class ApiInterfaceContainer(context: Context) {
             .create(ApiInterface::class.java)
     }
 
-    private val mockApiInterface: ApiInterface = MockApiInterfaceImpl()
+    private val mockApiInterface: ApiInterface = MockApiInterfaceImpl(context = context)
 
     private fun addInterceptors(
         builder: OkHttpClient.Builder,

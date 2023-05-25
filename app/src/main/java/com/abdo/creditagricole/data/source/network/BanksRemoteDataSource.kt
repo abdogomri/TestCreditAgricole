@@ -1,7 +1,5 @@
 package com.abdo.creditagricole.data.source.network
 
-import com.abdo.creditagricole.MyApplication
-import com.abdo.creditagricole.R
 import com.abdo.creditagricole.data.source.BanksDataSource
 import com.abdo.creditagricole.data.source.network.models.RemoteBanksRS
 import com.abdo.creditagricole.util.RequestState
@@ -17,9 +15,7 @@ class BanksRemoteDataSource @Inject constructor(
             }
         } catch (e: Exception) {
             return RequestState.Error(
-                Exception(
-                    MyApplication.appContext.getString(R.string.network_connection_problem)
-                )
+                Exception()
             )
         }
     }

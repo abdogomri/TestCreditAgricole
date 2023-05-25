@@ -1,19 +1,19 @@
 package com.abdo.creditagricole.util
 
-import com.abdo.creditagricole.MyApplication
+import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
-inline fun <reified T> getMock(filePath: String): T {
+inline fun <reified T> getMock(context: Context, filePath: String): T {
 
-    val jsonObject = loadJSONFromAssets("mock_files/$filePath")
+    val jsonObject = loadJSONFromAssets(context, "mock_files/$filePath")
     val response = object : TypeToken<T>() {}.type
     return Gson().fromJson(jsonObject, response)
 
 }
 
-fun loadJSONFromAssets(fileName: String): String {
-    return MyApplication.appContext.assets.open(fileName).bufferedReader().use { reader ->
+fun loadJSONFromAssets(context: Context, fileName: String): String {
+    return context.assets.open(fileName).bufferedReader().use { reader ->
         reader.readText()
     }
 }
