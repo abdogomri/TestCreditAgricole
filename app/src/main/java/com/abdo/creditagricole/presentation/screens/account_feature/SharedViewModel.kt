@@ -6,11 +6,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.creditagricole.network.repository.BanksRepository
-import com.creditagricole.domain.mappers.toBanksUiDataMap
 import com.abdo.creditagricole.presentation.screens.account_feature.operations.OperationsScreenUiState
-import com.creditagricole.model.data.AccountType
-import com.creditagricole.model.data.BanksUiData
+import com.creditagricole.domain.AccountsRequestState
+import com.creditagricole.domain.GetBanksDataUseCase
 import com.creditagricole.model.data.OperationUiData
 import com.creditagricole.util.model.RequestState
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -18,11 +16,9 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-typealias AccountsRequestState = RequestState<Map<AccountType, List<BanksUiData>>>
-
 @HiltViewModel
 class SharedViewModel @Inject constructor(
-    private val repository: BanksRepository
+    private val getBanksDataUseCase: GetBanksDataUseCase
 ) : ViewModel() {
     var accountsRequestState: AccountsRequestState by mutableStateOf(RequestState.Idle)
         private set
@@ -43,18 +39,7 @@ class SharedViewModel @Inject constructor(
     private fun getBanks() {
         accountsRequestState = RequestState.Loading
         viewModelScope.launch(Dispatchers.IO) {
-            val result = repository.getUserBanks()
-            when (result) {
-                is RequestState.Error -> {
-                    accountsRequestState = result
-                }
-
-                is RequestState.Success -> {
-                    accountsRequestState = RequestState.Success(result.data.toBanksUiDataMap())
-                }
-
-                else -> {}
-            }
+            accountsRequestState = getBanksDataUseCase.getBanksData()
         }
     }
 

@@ -29,7 +29,7 @@ import com.creditagricole.model.data.OperationUiData
 @Composable
 fun OperationsContent(
     paddingValues: PaddingValues,
-    operationUiData: com.creditagricole.model.data.OperationUiData
+    operationUiData: OperationUiData
 ) {
     val operationsMap = operationUiData.operations
     Column(
@@ -83,7 +83,7 @@ fun OperationsContent(
 fun OperationsContentPreview() {
     OperationsContent(
         paddingValues = PaddingValues(all = 0.dp),
-        operationUiData = com.creditagricole.model.data.OperationUiData(
+        operationUiData = OperationUiData(
             balance = 2067.9,
             holderName = "Corinne Martin",
             accountLabel = "Compte Mozaïc",

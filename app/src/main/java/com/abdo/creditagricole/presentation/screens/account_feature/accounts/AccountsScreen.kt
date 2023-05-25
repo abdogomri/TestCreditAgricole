@@ -14,15 +14,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.res.stringResource
 import com.abdo.creditagricole.R
-import com.creditagricole.util.Screen
-import com.creditagricole.ui.components.EmptyPage
+import com.creditagricole.domain.AccountsRequestState
 import com.creditagricole.model.data.OperationUiData
-import com.abdo.creditagricole.presentation.screens.account_feature.AccountsRequestState
+import com.creditagricole.ui.components.EmptyPage
+import com.creditagricole.util.Screen
 import com.creditagricole.util.model.RequestState
 
 @Composable
 fun AccountsScreen(
-    navigateToOperations: (com.creditagricole.model.data.OperationUiData) -> Unit,
+    navigateToOperations: (OperationUiData) -> Unit,
     accountsScreenUiState: AccountsRequestState
 ) {
     val scrollBehavior = TopAppBarDefaults.exitUntilCollapsedScrollBehavior()

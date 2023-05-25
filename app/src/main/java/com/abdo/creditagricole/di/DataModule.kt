@@ -1,5 +1,6 @@
 package com.abdo.creditagricole.di
 
+import com.creditagricole.domain.GetBanksDataUseCase
 import com.creditagricole.network.repository.BanksRepository
 import com.creditagricole.network.repository.DefaultBanksRepository
 import com.creditagricole.network.source.BanksDataSource
@@ -49,5 +50,17 @@ object RepositoryModule {
     ): BanksRepository {
         return DefaultBanksRepository(remoteDataSource = remoteDataSource)
     }
+
+}
+
+@Module
+@InstallIn(SingletonComponent::class)
+object UseCaseModule {
+
+    @Singleton
+    @Provides
+    fun provideBanksDataUseCase(
+        banksRepository: BanksRepository
+    ): GetBanksDataUseCase = GetBanksDataUseCase(repository = banksRepository)
 
 }
