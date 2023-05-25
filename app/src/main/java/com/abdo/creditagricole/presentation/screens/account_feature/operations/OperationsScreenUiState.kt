@@ -1,6 +1,6 @@
 package com.abdo.creditagricole.presentation.screens.account_feature.operations
 
-import com.abdo.creditagricole.presentation.models.OperationUiData
+import com.creditagricole.ui.models.OperationUiData
 
 /**
  * UiState for the Operations screen.

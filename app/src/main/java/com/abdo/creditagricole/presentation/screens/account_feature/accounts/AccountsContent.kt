@@ -17,11 +17,11 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.abdo.creditagricole.presentation.components.CollapsibleBankItem
-import com.abdo.creditagricole.presentation.components.EmptyPage
-import com.abdo.creditagricole.presentation.models.AccountType
-import com.abdo.creditagricole.presentation.models.BanksUiData
-import com.abdo.creditagricole.presentation.models.OperationUiData
+import com.creditagricole.ui.components.CollapsibleBankItem
+import com.creditagricole.ui.components.EmptyPage
+import com.creditagricole.ui.models.AccountType
+import com.creditagricole.ui.models.BanksUiData
+import com.creditagricole.ui.models.OperationUiData
 
 @Composable
 fun AccountsContent(

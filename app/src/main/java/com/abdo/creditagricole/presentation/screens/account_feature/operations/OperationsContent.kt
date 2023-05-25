@@ -20,11 +20,11 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.abdo.creditagricole.presentation.components.DateHeader
-import com.abdo.creditagricole.presentation.components.EmptyPage
-import com.abdo.creditagricole.presentation.components.OperationItem
-import com.abdo.creditagricole.presentation.components.getBalanceTextStyle
-import com.abdo.creditagricole.presentation.models.OperationUiData
+import com.creditagricole.ui.components.DateHeader
+import com.creditagricole.ui.components.EmptyPage
+import com.creditagricole.ui.components.OperationItem
+import com.creditagricole.ui.components.getBalanceTextStyle
+import com.creditagricole.ui.models.OperationUiData
 
 @Composable
 fun OperationsContent(
