@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace 'com.abdo.creditagricole'
-    compileSdk 33
+    compileSdk ProjectConfig.compileSdk
 
     defaultConfig {
         applicationId "com.abdo.creditagricole"
-        minSdk 26
-        targetSdk 33
+        minSdk ProjectConfig.minSdk
+        targetSdk ProjectConfig.targetSdk
         versionCode 1
         versionName "1.0"
 
@@ -39,7 +39,7 @@ android {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion '1.4.0'
+        kotlinCompilerExtensionVersion ProjectConfig.extensionVersion
     }
     packagingOptions {
         resources {
