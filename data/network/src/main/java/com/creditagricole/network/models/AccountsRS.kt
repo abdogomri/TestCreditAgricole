@@ -1,8 +1,8 @@
 package com.creditagricole.network.models
 
+import androidx.annotation.Keep
 import com.google.gson.annotations.SerializedName
-
-
+@Keep
 data class AccountsRS(
     @SerializedName("balance") var balance: Double,
     @SerializedName("contract_number") var contractNumber: String,
