@@ -17,6 +17,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import java.time.LocalDate
+import java.util.Locale
 
 @Composable
 fun DateHeader(localDate: LocalDate) {
@@ -29,7 +30,7 @@ fun DateHeader(localDate: LocalDate) {
     ) {
         Column(horizontalAlignment = Alignment.End) {
             Text(
-                text = String.format("%02d", localDate.dayOfMonth),
+                text = String.format(Locale.FRANCE,"%02d", localDate.dayOfMonth),
                 style = TextStyle(
                     fontSize = MaterialTheme.typography.titleLarge.fontSize,
                     fontWeight = FontWeight.Light
@@ -67,7 +68,7 @@ fun DateHeader(localDate: LocalDate) {
     }
 }
 
-@Preview
+@Preview(showBackground = true)
 @Composable
 fun DateHeaderPreview() {
     DateHeader(localDate = LocalDate.now())

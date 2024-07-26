@@ -3,13 +3,14 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
-    id 'com.google.gms.google-services'
-    id 'com.google.firebase.crashlytics'
+    alias(libs.plugins.compose.compiler)
+//    id 'com.google.gms.google-services'
+//    id 'com.google.firebase.crashlytics'
 }
 
 android {
     namespace 'com.abdo.creditagricole'
-    compileSdk ProjectConfig.compileSdk
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.abdo.creditagricole"
@@ -42,9 +43,7 @@ android {
     buildFeatures {
         compose true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion ProjectConfig.extensionVersion
-    }
+
     packagingOptions {
         resources {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
@@ -78,8 +77,8 @@ dependencies {
 
     implementation libs.hilt.navigation.compose
     implementation libs.hilt.android
-    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.3.2'
-    implementation 'com.google.firebase:firebase-analytics-ktx:21.2.0'
+//    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.3.2'
+//    implementation 'com.google.firebase:firebase-analytics-ktx:21.2.0'
     kapt libs.hilt.compiler
 
 
